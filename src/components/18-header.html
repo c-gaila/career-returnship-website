@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="18-header.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="topnav" id="hamburgerClick">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#become">Become a member</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#networking">Networking</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li class=hamburgerIcon><a href="javascript:void(0);"
+      onclick="dropdownMenu()">&#9776;</a></li>
+
+    </ul>
+  </nav>
+
+<script>
+  function dropdownMenu() {
+    var x = document.getElementByID("hamburgerClick");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      /*change topnav to topnav.responsive*/
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+</body
+
+</html>
