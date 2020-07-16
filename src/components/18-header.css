@@ -1,18 +1,59 @@
-/*##### Defaults #####*/
+/* Defaults */
 nav,
 header {
   display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
 }
 body {
   line-height: 1
   margin: 0;
   text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
 }
 
-/*##### Nav bar #####*/
+/* Logo - Color */
+header {
+  position: absolute;
+  left: 2.08%;
+  right: 77.5%;
+  top: 27%;
+  bottom: 26.5%;
+}
+
+/* CAREER RETURNSHIP */
+header {
+position: absolute;
+left: 13.61%;
+right: 0%;
+top: 21.51%;
+bottom: 20.43%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+font-feature-settings: 'kern' off;
+
+color: #DA0D46;
+}
+
+/* Nav bar */
 nav {
   width: 100%;
   margin: 0;
+  position: sticky;
 }
 
 nav ul li {
@@ -22,25 +63,39 @@ nav ul li {
   list-style: none;
   float: right;
 }
-ul.topnav li a{
-  display: block;
+ul.topnav li a {
+  display: flex;
   text-decoration: none;
   min-height: 16px;
   text-align: center;
-  padding: 14px;
+  padding: 20px;
   text-transform: capitalize;
-  font-weight: bold;
-  color: maroon;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  align-items: center;
+
+  color: #4C4C4C;
 }
+
 ul.topnav li a:hover {
-  background-color: #0080ff;
-  color: black;
+  background-color: #DA0D46;
+  color: white;
+  text: bolder;
+  text-decoration-line: underline;
+  border-radius: 5px;
+  text-transform: uppercase;
+
 }
 ul.topnav li.hamburgerIcon {
   display: none;
   float: right;
 }
-/*##### Mobile #####*/
+
+/* Mobile */
 @media screen and (max-width: 680px) {
   ul.topnav li {
     display: none;
